@@ -9,12 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemCommands", "FileS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRunner", "CommandRunner\CommandRunner.csproj", "{B481ECBA-2828-4953-8DC0-82F35EECEF3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}"
-EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -60,17 +55,8 @@ Global
 		{B481ECBA-2828-4953-8DC0-82F35EECEF3D}.Release|x64.Build.0 = Release|Any CPU
 		{B481ECBA-2828-4953-8DC0-82F35EECEF3D}.Release|x86.ActiveCfg = Release|Any CPU
 		{B481ECBA-2828-4953-8DC0-82F35EECEF3D}.Release|x86.Build.0 = Release|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Debug|x64.Build.0 = Debug|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Debug|x86.Build.0 = Debug|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Release|Any CPU.Build.0 = Release|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Release|x64.ActiveCfg = Release|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Release|x64.Build.0 = Release|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Release|x86.ActiveCfg = Release|Any CPU
-		{487CF6CA-EAC3-4139-AE0B-6F1797AAA969}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

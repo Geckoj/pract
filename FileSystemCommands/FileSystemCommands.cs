@@ -1,5 +1,34 @@
-﻿namespace FileSystemCommands
+﻿using System.ComponentModel;
+
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Property)]
+public class DisplayNameAttribute : Attribute
 {
+    public string DisplayName { get; }
+
+    public DisplayNameAttribute(string displayName)
+    {
+        DisplayName = displayName;
+    }
+}
+
+[AttributeUsage(AttributeTargets.Class)]
+public class VersionAttribute : Attribute
+{
+    public int Major { get; }
+    public int Minor { get; }
+
+    public VersionAttribute(int major, int minor)
+    {
+        Major = major;
+        Minor = minor;
+    }
+}
+
+namespace FileSystemCommands
+{
+    
+    [DisplayName("DirectorySize")]
+    [Version(1, 0)]
     public class DirectorySizeCommand : ICommand
     {
         private readonly string _directoryPath;
@@ -26,6 +55,9 @@
             Console.WriteLine($"Directory size: {totalSize} bytes");
         }
     }
+    
+    [DisplayName("FindFiles")]
+    [Version(1, 0)]
     public class FindFilesCommand : ICommand
     {
         private readonly string _directoryPath;
