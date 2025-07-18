@@ -2,9 +2,9 @@ name: .NET CI
 
 on:
   push:
-    branches: [ task03 ]
+    branches: [ task04 ]
   pull_request:
-    branches: [ task03]
+    branches: [ task04]
 
 jobs:
   build-and-test:
@@ -20,10 +20,10 @@ jobs:
           dotnet-version: '9.0.x'
 
       - name: Восстановление зависимостей
-        run: dotnet restore ./task03tests/task03tests.csproj
+        run: dotnet restore ./task04tests/task04tests.csproj
 
       - name: Сборка
-        run: dotnet build ./task03tests/task03tests.csproj --no-restore --configuration Release
+        run: dotnet build ./task04tests/task04tests.csproj --no-restore --configuration Release
 
       - name: Запуск тестов
-        run: dotnet test ./task03tests/task03tests.csproj --no-build --configuration Release --verbosity normal
+        run: dotnet test ./task04tests/task04tests.csproj --no-build --configuration Release --verbosity normal
