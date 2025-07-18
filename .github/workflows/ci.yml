@@ -1,0 +1,29 @@
+name: .NET CI
+
+on:
+  push:
+    branches: [ task01 ]
+  pull_request:
+    branches: [ task01]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout репозиторий
+        uses: actions/checkout@v3
+
+      - name: Установка .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Восстановление зависимостей
+        run: dotnet restore
+
+      - name: Сборка
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Запуск тестов
+        run: dotnet test --no-build --configuration Release --verbosity normal
