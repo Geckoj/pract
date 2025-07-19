@@ -15,11 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Xunit" />
+    <ProjectReference Include="..\task17\task17.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\task14\task14.csproj" />
+    <Using Include="Xunit" />
   </ItemGroup>
 
 </Project>
